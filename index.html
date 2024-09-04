@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/index.BfBiGnnb.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 16w, /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 32w, /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 48w, /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 64w, /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 96w, /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 128w, /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 256w"
+      imagesizes="100vw"
+    />
+    <meta property="og:url" content="https://url/" />
+    <title>Home</title>
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="preload"
+      href="/assets/Exo2-VariableFont_wght_n58Y9NAUPzkfGob1B8eUX.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Default Light Mode */
+      body {
+        background-color: #ffffff;
+        transition:
+          background-color 1s,
+          color 1s,
+          display 1s;
+      }
+      .primary-text {
+        color: #000000; /* Primary color for light mode */
+      }
+      .secondary-text {
+        color: gray; /* Secondary color for light mode */
+      }
+      .light-svg {
+        display: block;
+      }
+      .dark-svg {
+        display: none;
+      }
+
+      /* Expand Text */
+      .expandable-text span {
+        display: block;
+        overflow: hidden;
+        height: 48px;
+        transition: height 1s ease-in-out;
+      }
+
+      .expandable-text.expanded span {
+        height: auto;
+      }
+
+      /* Dark Mode Styles */
+      body.dark-mode {
+        background-color: #333333;
+      }
+      body.dark-mode .primary-text {
+        color: #ffffff; /* Primary color for dark mode */
+      }
+      body.dark-mode .secondary-text {
+        color: #afafaf; /* Primary color for dark mode */
+      }
+      body.dark-mode .light-svg {
+        display: none;
+      }
+      body.dark-mode .dark-svg {
+        display: block;
+      }
+      body.dark-mode .button-primary {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      body.dark-mode .button-secondary {
+        background-color: #545454;
+        color: #ffffff;
+      }
+      body.dark-mode .card-component {
+        background-color: #545454;
+      }
+    </style>
+  </head>
+  <body class="w-body">
+    <header
+      class="w-box c1wvallm c6qxwur cgcvwta c1uzp94u c12u9329 chctymb c1qxo0jz c10ufj7c"
+    >
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1 c1cfx9rb c1rnf429 animation"
+      >
+        <div
+          class="w-box c9xlu1y c1glglkj c13nev9t c1oe64r1 c3nghae c17nn93y c1rz8wra c1cfx9rb c1rnf429"
+        >
+          <div class="w-box c9xlu1y c13nev9t c1oe64r1 csvg8je c1qyad5j">
+            <a href="/" class="w-link c10qvypg c13utkt2"
+              ><div
+                class="w-text c18iy9v cr10yk9 c1ku4tr c1tgyfa4 cexvybz primary-text"
+              >
+                biró
+              </div></a
+            >
+          </div>
+          <div class="w-box c9xlu1y c13nev9t c1oe64r1 csvg8je cm6j5xg">
+            <button
+              type="button"
+              id="toggle-mode"
+              class="w-button c1si0bb6 c1kvphcv c173hown ciif6ld ctq5z7d c1d8apjj c1ud77bf cyd5pbv"
+            >
+              <div class="w-html-embed light-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                >
+                  <path
+                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="w-html-embed cc3xbrl c12ctfuc dark-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#ffffff"
+                >
+                  <path
+                    d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="w-box c87ksef cj08sf4 c1o6r6ya cs3gl8n">
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y c1qdafei c1rz8wra c17nn93y csvg8je c1qyad5j cxuf5ze c1h7pgv1 c15c34oj cug1963 czg6zy0"
+      >
+        <div
+          class="w-box c1tt8d8f c17nn93y c1rz8wra ctwl5mr cb1ernr c1uhjf9p animation"
+        >
+          <img
+            alt=""
+            width="108"
+            height="108"
+            src="/assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png"
+            class="w-image"
+            sizes="100vw"
+            srcset="
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png  16w,
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png  32w,
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png  48w,
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png  64w,
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png  96w,
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 128w,
+              /assets/Profile-IMG_CLPXdUCgT_PF4TaZEdXVw.png 256w
+            "
+            decoding="async"
+            loading="eager"
+          />
+        </div>
+        <div class="w-box c9xlu1y chbe8mh ctnly4v ctwl5mr c13nev9t c1oe64r1">
+          <div
+            class="w-text c18iy9v cr10yk9 c1hglqvr c7w4tx1 c1alytyn primary-text animation"
+          >
+            Andrei Biró
+          </div>
+          <div
+            class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn primary-text animation"
+          >
+            Lead Digital Marketing Manager
+          </div>
+          <div
+            class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn chhhbcz secondary-text animation"
+          >
+            Vienna, Austria
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-box c87ksef cj08sf4 c1o6r6ya cs3gl8n">
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1"
+      >
+        <div class="w-box c9xlu1y c17nn93y c1rz8wra ctwl5mr">
+          <div
+            class="w-text c18iy9v cr10yk9 c1hglqvr c7w4tx1 c1alytyn primary-text animation"
+          >
+            About
+          </div>
+          <div
+            class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn primary-text animation"
+          >
+            I hail from Transylvania, Romania, and am fortunate to have
+            Hungarian, Romanian, and German roots, which enriched my upbringing
+            with multiple languages and cultures. Having resided in Austria for
+            over 12 years, my linguistic abilities and deep appreciation for
+            diverse cultures have been pivotal to my professional journey.<br /><br />In
+            my previous roles at multinational corporation headquarters, I have
+            developed and coordinated various marketing strategies and
+            campaigns, working closely with local marketing teams in satellite
+            countries. My experience spans from traditional marketing (e.g.,
+            print and TV) to digital marketing in my current position.
+          </div>
+          <div
+            class="w-box c9xlu1y c1v2iy81 cb9rl2s c1edve1s c1np7qn5 c1agai97"
+          >
+            <div
+              class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn primary-text animation"
+            >
+              #DigitalMarketing
+            </div>
+            <div
+              class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn primary-text animation"
+            >
+              #ProjectManagement
+            </div>
+            <div
+              class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn primary-text animation"
+            >
+              #WebshopDevelopment
+            </div>
+          </div>
+          <div class="w-box c9xlu1y c1v2iy81 cb9rl2s">
+            <a
+              class="w-link c9xlu1y cgcvwta c1uzp94u czoffv7 c1msizhs c1qdafei chbe8mh ctnly4v c13ote9i c1pdb9rm c31ncza c1z86jj c14jtwto c13utkt2 cxd5xg2 c16dueh5 c1i84g6d c374v9z button-primary animation"
+              href="#"
+              >Say Hi<br /></a
+            ><a
+              class="w-link c9xlu1y cgcvwta c1uzp94u czoffv7 c1msizhs c1qdafei chbe8mh ctnly4v c13ote9i c1dv3ov4 c31ncza c1z86jj c10qvypg c13utkt2 cxd5xg2 c16dueh5 c1i84g6d c374v9z button-secondary animation"
+              href="#"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-box c87ksef cj08sf4 c1o6r6ya cs3gl8n">
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1"
+      >
+        <div class="w-box c9xlu1y c17nn93y c1rz8wra ctwl5mr c13nev9t c1oe64r1">
+          <div
+            class="w-text c18iy9v cr10yk9 c1hglqvr c7w4tx1 c1alytyn primary-text animation"
+          >
+            Experience
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra cb1ernr c1oe64r1 c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2018 - Dato
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza c1gyi4v9 c13unuky chhhbcz secondary-text"
+              >
+                5 yrs 11+ mos
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky c13ote9i primary-text"
+              >
+                Digital Marketing Manager
+              </div>
+              <div class="w-box c9xlu1y chbe8mh ctnly4v">
+                <div class="w-html-embed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#276ef1"
+                  >
+                    <path
+                      d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                    ></path>
+                  </svg>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.frischeis.at/"
+                  class="w-link c13unuky cklpiq1 c10qvypg c13utkt2 cxxti36 cpgtb7h primary-text"
+                  >JAF International Services Gesellschaft m.b.H.</a
+                >
+              </div>
+              <div
+                class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v expandable-text"
+              >
+                <span
+                  class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn chhhbcz c13ote9i secondary-text"
+                  >Further development of the web presence with regard to sales
+                  and distribution communication and service (B2B).<br />Conception
+                  and participation in innovative content and commerce
+                  applications and their international roll-out.
+                  <br />Responsible for the development and maintenance of the
+                  CMS as well as other web applications.<br />Coordination and
+                  local contact in the countries of the JAF Group.
+                  <br />Cooperation and coordination of development partners,
+                  agencies and internal clients.<br />Content management and
+                  active design (text, image, video) as well as updating of the
+                  product content for the corporate websites / e-shops in
+                  coordination with the product management.<br />Expansion of
+                  SEO potential through professional content marketing.
+                  <br />Conception, control and analysis of Google Ads campaigns
+                  (SEO). <br />Use of performance marketing to control website
+                  results.<br />Monitoring of the KPI and web reporting.</span
+                ><button
+                  type="button"
+                  class="w-button c1tt8d8f cppfa0e c1kvphcv c173hown ciif6ld ctq5z7d cb1ernr c1oe64r1 c1gmabna c1sfnb1l c1ud77bf czlci5 cpgtb7h expand-button"
+                >
+                  ... show more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra cb1ernr c1oe64r1 c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2016 - 2018
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza c1gyi4v9 c13unuky chhhbcz secondary-text"
+              >
+                2 yrs 9 mos
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky c13nev9t c1oe64r1 c13ote9i primary-text"
+              >
+                Account Manager
+              </div>
+              <div class="w-box c9xlu1y chbe8mh ctnly4v">
+                <div class="w-html-embed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#276ef1"
+                  >
+                    <path
+                      d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                    ></path>
+                  </svg>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://tbwa.at/"
+                  class="w-link c13unuky cklpiq1 c10qvypg c13utkt2 cxxti36 cpgtb7h primary-text"
+                  >TBWA\WIEN Werbeagentur GmbH</a
+                >
+              </div>
+              <div
+                class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v expandable-text"
+              >
+                <span
+                  class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn chhhbcz c13ote9i secondary-text"
+                  >Autonomous project handling of ATL &amp; BTL campaigns
+                  (classical, below-the-line and online) and adaptations for one
+                  of our large international customers. <br />CEE
+                  coordination.<br />Project management and commercial
+                  processing.<br />Preparation of timings and quality
+                  control.</span
+                ><button
+                  type="button"
+                  class="w-button c1tt8d8f cppfa0e c1kvphcv c173hown ciif6ld ctq5z7d cb1ernr c1oe64r1 c1gmabna c1sfnb1l c1ud77bf czlci5 cpgtb7h expand-button"
+                >
+                  ... show more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra cb1ernr c1oe64r1 c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2012 - 2015
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza c1gyi4v9 c13unuky chhhbcz secondary-text"
+              >
+                3 yrs 10 mos
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky c13nev9t c1oe64r1 c13ote9i primary-text"
+              >
+                Advertising Media Planner
+              </div>
+              <div class="w-box c9xlu1y chbe8mh ctnly4v">
+                <div class="w-html-embed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#276ef1"
+                  >
+                    <path
+                      d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                    ></path>
+                  </svg>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/baumax-ag/"
+                  class="w-link c13unuky cklpiq1 c10qvypg c13utkt2 cxxti36 cpgtb7h primary-text"
+                  >bauMax AG</a
+                >
+              </div>
+              <div
+                class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v expandable-text"
+              >
+                <span
+                  class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn chhhbcz c13ote9i secondary-text"
+                  >Planning and implementation of all advertising print and
+                  online media.<br />Coordinated the implementation of
+                  group-wide organisational and creative advertising.<br />Ensured
+                  close cooperation with the Austrian advertising department and
+                  the international /<br />country marketing,
+                  acquisition,,import, CRM, store construction and POS
+                  department.<br />Survey of own-brand-layouts and assuring
+                  return information to the Far East suppliers.<br />Carried out
+                  the designing of a new CI for store construction and POS.<br />Contributed
+                  to planning, launching and rollout of new advertising
+                  campaigns.</span
+                ><button
+                  type="button"
+                  class="w-button c1tt8d8f cppfa0e c1kvphcv c173hown ciif6ld ctq5z7d cb1ernr c1oe64r1 c1gmabna c1sfnb1l c1ud77bf czlci5 cpgtb7h expand-button"
+                >
+                  ... show more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra cb1ernr c1oe64r1 c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2010 - 2012
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza c1gyi4v9 c13unuky chhhbcz secondary-text"
+              >
+                1 yrs 6 mos
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky c13nev9t c1oe64r1 c13ote9i primary-text"
+              >
+                Production Planner
+              </div>
+              <div class="w-box c9xlu1y chbe8mh ctnly4v">
+                <div class="w-html-embed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#276ef1"
+                  >
+                    <path
+                      d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                    ></path>
+                  </svg>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.connectgroup.com/en/"
+                  class="w-link c13unuky cklpiq1 c10qvypg c13utkt2 cxxti36 cpgtb7h primary-text"
+                  >Connect Group PLC</a
+                >
+              </div>
+              <div
+                class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v expandable-text"
+              >
+                <span
+                  class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn chhhbcz c13ote9i secondary-text"
+                  >Planning and implementation of all advertising print and
+                  online media.<br />Coordinated the implementation of
+                  group-wide organisational and creative advertising.<br />Ensured
+                  close cooperation with the Austrian advertising department and
+                  the international /<br />country marketing,
+                  acquisition,,import, CRM, store construction and POS
+                  department.<br />Survey of own-brand-layouts and assuring
+                  return information to the Far East suppliers.<br />Carried out
+                  the designing of a new CI for store construction and POS.<br />Contributed
+                  to planning, launching and rollout of new advertising
+                  campaigns.</span
+                ><button
+                  type="button"
+                  class="w-button c1tt8d8f cppfa0e c1kvphcv c173hown ciif6ld ctq5z7d cb1ernr c1oe64r1 c1gmabna c1sfnb1l c1ud77bf czlci5 cpgtb7h expand-button"
+                >
+                  ... show more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra cb1ernr c1oe64r1 c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2009 - 2010
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza c1gyi4v9 c13unuky chhhbcz secondary-text"
+              >
+                1 yrs 5 mos
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky c13nev9t c1oe64r1 c13ote9i primary-text"
+              >
+                Material Planner
+              </div>
+              <div class="w-box c9xlu1y chbe8mh ctnly4v">
+                <div class="w-html-embed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#276ef1"
+                  >
+                    <path
+                      d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                    ></path>
+                  </svg>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.celestica.com/"
+                  class="w-link c13unuky cklpiq1 c10qvypg c13utkt2 cxxti36 cpgtb7h primary-text"
+                  >Celestica Romania</a
+                >
+              </div>
+              <div
+                class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v expandable-text"
+              >
+                <span
+                  class="w-text c18iy9v cr10yk9 c14gn42u cjtbpcg c6a4ugn chhhbcz c13ote9i secondary-text"
+                  >Oversaw inventory pipeline in order to meet customer demand,
+                  managing inventory/<br />consumption in order to meet
+                  financial goals, reviewed and approved recommendations<br />as
+                  required to ensure on-time delivery of finished product.<br />Production
+                  orders/shop orders management; data compilation, comparison
+                  and analysis.</span
+                ><button
+                  type="button"
+                  class="w-button c1tt8d8f cppfa0e c1kvphcv c173hown ciif6ld ctq5z7d cb1ernr c1oe64r1 c1gmabna c1sfnb1l c1ud77bf czlci5 cpgtb7h expand-button"
+                >
+                  ... show more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra cb1ernr c1oe64r1 c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2009 - 2010
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza c1gyi4v9 c13unuky chhhbcz secondary-text"
+              >
+                5 mos
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky c13nev9t c1oe64r1 c13ote9i primary-text"
+              >
+                Transport Agent
+              </div>
+              <div class="w-box c9xlu1y chbe8mh ctnly4v">
+                <a
+                  target="_blank"
+                  href="https://www.connectgroup.com/en/"
+                  class="w-link c13unuky cklpiq1 c10qvypg c13utkt2 cxxti36 cpgtb7h primary-text"
+                  >Royal Sped Trans Romania</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-box c87ksef cj08sf4 c1o6r6ya cs3gl8n">
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1"
+      >
+        <div class="w-box c9xlu1y c17nn93y c1rz8wra ctwl5mr">
+          <div
+            class="w-text c18iy9v cr10yk9 c1hglqvr c7w4tx1 c1alytyn primary-text animation"
+          >
+            Languages
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra c1csffmw c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div
+              class="w-box c9xlu1y ctwl5mr c17bah7o ckcc696 c1dv3ov4 c13f9rq0 c1ph35ay c1oeg729 c1jpakrv c9xa4pw c1csffmw c3j123g c5p9sh0 card-component"
+            >
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                English
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza cklpiq1 c6a4ugn chhhbcz secondary-text"
+              >
+                Full professional proficiency
+              </div>
+            </div>
+            <div
+              class="w-box c9xlu1y ctwl5mr c17bah7o ckcc696 c1dv3ov4 c13f9rq0 c1ph35ay c1oeg729 c1jpakrv c9xa4pw c1csffmw c3j123g c5p9sh0 card-component"
+            >
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                German
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza cklpiq1 c6a4ugn chhhbcz secondary-text"
+              >
+                Native or bilingual proficiency
+              </div>
+            </div>
+            <div
+              class="w-box c9xlu1y ctwl5mr c17bah7o ckcc696 c1dv3ov4 c13f9rq0 c1ph35ay c1oeg729 c1jpakrv c9xa4pw c1csffmw c3j123g c5p9sh0 card-component"
+            >
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                Hungarian
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza cklpiq1 c6a4ugn chhhbcz secondary-text"
+              >
+                Native or bilingual proficiency
+              </div>
+            </div>
+            <div
+              class="w-box c9xlu1y ctwl5mr c17bah7o ckcc696 c1dv3ov4 c13f9rq0 c1ph35ay c1oeg729 c1jpakrv c9xa4pw c1csffmw c3j123g c5p9sh0 card-component"
+            >
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                Romanian
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza cklpiq1 c6a4ugn chhhbcz secondary-text"
+              >
+                Native or bilingual proficiency
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-box c87ksef cj08sf4 c1o6r6ya cs3gl8n">
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1"
+      >
+        <div class="w-box c9xlu1y c17nn93y c1rz8wra ctwl5mr">
+          <div
+            class="w-text c18iy9v cr10yk9 c1hglqvr c7w4tx1 c1alytyn primary-text animation"
+          >
+            Education
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2008 - 2010
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky primary-text"
+              >
+                Master of Arts - MA, International Business/ Trade/ Commerce
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                University of Oradea
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                2004 - 2008
+              </div>
+            </div>
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cmt2cmw c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c1uomkjr cjtbpcg c13unuky primary-text"
+              >
+                Bachelor of Arts - BA, International Business/ Trade/ Commerce
+              </div>
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                University of Oradea
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-box c87ksef cj08sf4 c1o6r6ya cs3gl8n">
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1"
+      >
+        <div class="w-box c9xlu1y c17nn93y c1rz8wra ctwl5mr">
+          <div
+            class="w-text c18iy9v cr10yk9 c1hglqvr c7w4tx1 c1alytyn primary-text animation"
+          >
+            Contact
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                LinkedIn
+              </div>
+            </div>
+            <div class="w-box c9xlu1y chbe8mh ctnly4v">
+              <div class="w-html-embed">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="#276ef1"
+                >
+                  <path
+                    d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                  ></path>
+                </svg>
+              </div>
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/andrei-bir%C3%B3-b554b21b"
+                class="w-link c13unuky cklpiq1 c1gmabna c13utkt2 cxxti36 cpgtb7h"
+                >linkedin.com/in/andrei-biró-b554b21b</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                E-Mail Address
+              </div>
+            </div>
+            <div class="w-box c9xlu1y chbe8mh ctnly4v">
+              <div class="w-html-embed">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="#276ef1"
+                >
+                  <path
+                    d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                  ></path>
+                </svg>
+              </div>
+              <a
+                target="_blank"
+                href="mailto:andreibiro@outlook.com"
+                class="w-link c13unuky cklpiq1 c1gmabna c13utkt2 cxxti36 cpgtb7h"
+                >andreibiro@outlook.com</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-box c9xlu1y c17nn93y c1rz8wra c15c34oj c1cfx9rb c1rnf429 animation"
+          >
+            <div class="w-box c9xlu1y ctwl5mr chbe8mh ctnly4v cu4okvo c5p9sh0">
+              <div
+                class="w-text c18iy9v cr10yk9 c14gn42u cklpiq1 c13unuky primary-text"
+              >
+                Resume
+              </div>
+            </div>
+            <div class="w-box c9xlu1y chbe8mh ctnly4v">
+              <div class="w-html-embed">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="#276ef1"
+                >
+                  <path
+                    d="M222.78-124.78q-41 0-69.5-28.5t-28.5-69.5v-514.44q0-41 28.5-69.5t69.5-28.5H480v98H222.78v514.44h514.44V-480h98v257.22q0 41-28.5 69.5t-69.5 28.5H222.78ZM404.52-336 336-404.52l332.69-332.7H576v-98h259.22V-576h-98v-92.69L404.52-336Z"
+                  ></path>
+                </svg>
+              </div>
+              <a
+                target="_blank"
+                href="mailto:andreibiro@outlook.com"
+                class="w-link c13unuky cklpiq1 c1gmabna c13utkt2 cxxti36 cpgtb7h"
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="w-box c1wvallm c6qxwur cgcvwta c1uzp94u c12u9329 chctymb c1qxo0jz c10ufj7c"
+    >
+      <div
+        class="w-box cfp286m c1ocgflh c12at464 c9xlu1y ctwl5mr c1rz8wra c17nn93y cxuf5ze c1h7pgv1 animation"
+      >
+        <div
+          class="w-box c9xlu1y c1glglkj c13nev9t c1oe64r1 c3nghae c17nn93y c1rz8wra ctwl5mr c1cfx9rb c1rnf429 c15c34oj"
+        >
+          <div
+            class="w-box c9xlu1y c13nev9t c1oe64r1 cnn4qgn c1qyad5j ckqy2ua c11psn2l c1mncsuh czg6zy0"
+          >
+            <div class="w-box c13nev9t c1oe64r1">
+              <div
+                class="w-text c18iy9v cr10yk9 c31ncza cklpiq1 c6a4ugn chhhbcz chwtv15 secondary-text animation"
+              >
+                ©2024 - Andrei Biró
+              </div>
+            </div>
+            <div class="w-box c13nev9t c1oe64r1 c9xlu1y csvg8je cm6j5xg">
+              <a href="/" class="w-link c10qvypg c13utkt2"
+                ><div
+                  class="w-text c18iy9v cr10yk9 c1ku4tr c1tgyfa4 cexvybz primary-text"
+                >
+                  biró
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "abortReason": "!undefined",
+        "_urlRewrite": null,
+        "_urlRedirect": "!undefined",
+        "abortStatusCode": "!undefined",
+        "_abortCall": "!undefined",
+        "_pageContextInitIsPassedToClient": "!undefined",
+        "_pageId": "/pages/index",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/",
+          "system": { "params": {}, "search": {}, "origin": "https://url" },
+          "resources": {},
+          "pageMeta": {
+            "title": "Home",
+            "description": "!undefined",
+            "excludePageFromSearch": "!undefined",
+            "language": "!undefined",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "!undefined",
+            "status": "!undefined",
+            "redirect": "!undefined",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.CJ_vNTHr.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_index.yQ4_N2eI.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-BrCvfY32.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
+</html>
